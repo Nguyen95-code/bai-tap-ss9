@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateClass(name) {
+        let str = /^[ACP]+[0-9]+[GHIKLM]+[0-9]$/;
+        return str.test(name);
+    }
+
+    console.log(validateClass("C0619G1"));
+</script>
+</body>
+</html>

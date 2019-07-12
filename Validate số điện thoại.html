@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateNumber(str) {
+        let num = /^\([0-9]{2,}\)+\-+\([0-9]{10,}\)$/;
+        return num.test(str);
+    }
+    console.log(validateNumber("(84)-(0978489648)"));
+    console.log(validateNumber("(a8)-(22222222)"));
+</script>
+</body>
+</html>
